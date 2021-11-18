@@ -1,0 +1,355 @@
+/*-------------------ESTILOS PARA LA PAGINA PORTFOLIO-----------------*/
+.content{
+    
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    align-items: start;
+    grid-column-gap:7px;
+    padding-top:150px;
+    padding-bottom: 20px;
+
+    /*MENU DE PORTFOLIO*/
+	.aside{
+	    margin-right: 30px;
+	    padding:15px;
+		    .aside__h2{
+		    color:aqua;
+		    display: block;
+		    width: 100%;
+
+		    padding-bottom: 10px;
+		    margin-bottom: 20px;
+		    text-align: center;
+		    border-bottom: 1px solid rgba(225,225,226,0.8);
+			}
+
+			.aside__ul{
+		    list-style: none;
+		    
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    
+			    .aside__li{
+				padding-bottom: 20px;
+				
+				}
+				.aside__enlace{
+				text-decoration: none;
+			    display: block;
+			    padding: 15px;
+			    background-color: black;
+			    color:aqua;
+			    border:1px solid aqua;
+			    text-align: center;
+			    
+				}
+				.aside__enlace:hover{
+			    background: aqua;
+			    color: black;
+			    font-weight: bold;
+				}
+			}
+	}
+	/*TARJETAS DE PORTFOLIO*/
+	.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-gap:11px;
+    align-items:start; 
+	    .project{
+	    margin-bottom: 25px;
+	    margin-right:15px;
+	    border:1px solid aqua;
+		    .project__imagen{
+                padding:6px;
+		    	.project__img{
+			    width:100%;
+				}
+				.project__img:hover{
+			    transform:scale(1.1, 1.1);
+			    transition:300ms;
+				}
+		    }
+
+
+		    .project__project-info{
+		    	padding:10px;
+			    .project__enlace{
+			    font-size: 16px;
+			    color:white;
+			    opacity: 0.7;
+			    transition: all 300ms;
+				}
+				.project__enlace:hover{
+				color:aqua;
+				}
+				.project__p {
+			    color:aqua;
+			    font-size: 12px;
+				}
+		    }
+		}
+	}
+
+}
+
+
+
+@media (max-width: 992px){
+
+    .content{
+    
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        align-items: start;
+        grid-column-gap:7px;
+        padding-top:150px;
+        padding-bottom: 20px;
+    
+        /*MENU DE PORTFOLIO*/
+        .aside{
+            margin-right: 30px;
+            padding:15px;
+                .aside__h2{
+                color:aqua;
+                display: block;
+                width: 100%;
+    
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+                border-bottom: none;
+                }
+    
+                .aside__ul{
+                list-style: none;
+                
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                    .aside__li{
+                    padding-bottom: 20px;
+                    
+                    }
+                    .aside__enlace{
+                    text-decoration: none;
+                    display: block;
+                    padding: 15px;
+                    background-color: black;
+                    color:aqua;
+                    border:1px solid aqua;
+                    text-align: center;
+                    
+                    }
+                    .aside__enlace:hover{
+                    background: aqua;
+                    color: black;
+                    font-weight: bold;
+                    }
+                }
+        }
+        /*TARJETAS DE PORTFOLIO*/
+        .projects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:11px;
+        align-items:start; 
+            .project{
+            margin-bottom: 25px;
+            margin-right:15px;
+            border:1px solid aqua;
+                .project__imagen{
+                    .project__img{
+                    width:100%;
+                    }
+                    .project__img:hover{
+                    transform:scale(1.1, 1.1);
+                    transition:300ms;
+                    }
+                }
+    
+    
+                .project__project-info{
+                    padding:10px;
+                    .project__enlace{
+                    font-size: 16px;
+                    color:white;
+                    opacity: 0.7;
+                    transition: all 300ms;
+                    }
+                    .project__enlace:hover{
+                    color:aqua;
+                    }
+                    .project__p {
+                    color:aqua;
+                    font-size: 12px;
+                    }
+                }
+            }
+        }
+    
+    }}
+
+
+
+@media (max-width: 768px){
+
+    .content{
+        padding-top: 80px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*MENU DE PORTFOLIO*/
+        .aside{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-right: 0px;
+                .aside__h2{
+                color:white;
+                width: 100%;
+                font-size: 18px;
+                
+                border:none;
+                }
+    
+                .aside__ul{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    column-gap: 6px;
+                    .aside__li{
+                    padding-bottom: 10px;
+                    }
+                    .aside__enlace{
+                    padding: 3px;
+                    }
+                    .aside__enlace:hover{
+                    
+                    }
+                }
+            }
+
+    .projects{
+        grid-template-columns:repeat(2,1fr);
+        width: 100%;
+        gap: 10px;
+        justify-items: center;
+            .project{
+            
+                  .project__imagen{
+                      
+                     .project__img{
+                     
+                     }
+                     .project__img:hover{
+                     
+                     }
+                 }
+            
+            
+                 .project__project-info{
+                    
+                    .project__enlace{
+                      
+                      }
+                      .project__enlace:hover{
+                      
+                      }
+                      .project__p {
+                     
+                     }
+                 }
+             }
+         }
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .content{
+        padding-top: 80px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*MENU DE PORTFOLIO*/
+        .aside{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-right: 0px;
+                .aside__h2{
+                color:white;
+                width: 100%;
+                font-size: 18px;
+                
+                border:none;
+                }
+    
+                .aside__ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                    .aside__li{
+                    padding-bottom: 10px;
+                    }
+                    .aside__enlace{
+                    padding: 3px;
+                    }
+                    .aside__enlace:hover{
+                    
+                    }
+                }
+            }
+
+        .projects{
+        grid-template-columns:1fr;
+        width: 80%;
+       
+        gap: 10px;
+        
+           
+            .project{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            
+            border:1px solid aqua;
+                  .project__imagen{
+                      
+                     .project__img{
+                     width:100%;
+                     }
+                     .project__img:hover{
+                     transform:scale(1.1, 1.1);
+                     transition:300ms;
+                     }
+                 }
+            
+            
+                 .project__project-info{
+                    padding:10px;
+                    .project__enlace{
+                       font-size: 16px;
+                       color:white;
+                      opacity: 0.7;
+                      transition: all 300ms;
+                      }
+                      .project__enlace:hover{
+                      color:aqua;
+                      }
+                      .project__p {
+                     color:aqua;
+                     font-size: 12px;
+                     }
+                 }
+             }
+         }
+    }
+}
